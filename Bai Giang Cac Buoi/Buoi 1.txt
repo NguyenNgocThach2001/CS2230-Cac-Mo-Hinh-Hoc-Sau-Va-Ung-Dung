@@ -72,8 +72,21 @@ Nhìn ván đề:
 Nền tảng đại số tuyến tính:
 - Scalar, vector, matrix, tensor.
 	+ Scalar: những giá trị vô hướng, ký hiệu viết thường.
-	+ Vector: biểu diễn dữ liệu có nhiều chiều gồm: vận tốc, lực, điểm, ... ký hiệu viết thường và in đậm.
+	+ Vector: biểu diễn dữ liệu có nhiều chiều gồm: vận tốc, lực, điểm, ... ký hiệu viết thường và in đậm. vector mặc định sẽ ở dạng cột.
 	+ Matrix: gồm nhiều vector, ký hiệu viết hoa.
 	+ Tensor: A thuộc Rmxnxp. gồm nhiều hần tử được bố trí vào một không gian nhiều hơn 2 chiều. Ký hiệu viết hoa in đậm.
+- Tổng 2 vector.
+- Nhân 2 vector.
+- Tích vô hướng 2 vector.
+Ví dụ minh họa:
+- Cho 2 vector x^T và y. (x^T ngang, y dọc).
+- Vector x biểu hiện số tín chỉ của các môn học.
+- Vector y biểu hiện kết quả thi của môn học.
+- Vector kết quả là tín chỉ * điểm thi
+x^T.y = [3 3 4 2 1] . |9| =  [27 18 20 16 1]
+		      |6|
+		      |5|
+		      |8|
+		      |1|
 - Một số dạng dữ liệu thực tế.
 - 
