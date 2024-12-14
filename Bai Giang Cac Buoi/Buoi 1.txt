@@ -129,3 +129,4 @@ Công việc của 1 nhà khoa học deep learning:
 - Thiết kế ftheota(x)
 - Thiết kế hàm Loss(theta)
 - Tìm theta* để Loss(theta) nhỏ nhất.
+
