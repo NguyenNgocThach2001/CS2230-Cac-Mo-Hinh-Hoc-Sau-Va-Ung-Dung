@@ -78,12 +78,12 @@ Nền tảng đại số tuyến tính:
 - Tổng 2 vector.
 - Nhân 2 vector.
 - Tích vô hướng 2 vector.
-Ví dụ minh họa:
+Ví dụ minh họa nhân 2 vector	:
 - Cho 2 vector x^T và y. (x^T ngang, y dọc).
 - Vector x biểu hiện số tín chỉ của các môn học.
 - Vector y biểu hiện kết quả thi của môn học.
 - Vector kết quả là tín chỉ * điểm thi
-x^T.y = [3 3 4 2 1] . |9| =  [27 18 20 16 1]
+x^T.y = [3 3 4 2 1] . |9| = 
 		      |6|
 		      |5|
 		      |8|
