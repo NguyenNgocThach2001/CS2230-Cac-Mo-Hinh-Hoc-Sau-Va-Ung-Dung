@@ -46,7 +46,7 @@ Văn bản:
 Các câu hỏi trong lớp học (từ học viên):
 CH1: Làm sao tránh overfitting? Dùng nhiều độ đo khác nhau để đánh giá mô hình. Hoặc Early Stopping. Xử lý dữ liệu (noise)?
 =>
-2 cách đơn giản hay sử dụng:
+2 hướng hay sử dụng:
 1. Tăng thêm kích thước dữ liệu.
 2. Giảm độ phức tạp mô hình.
 CH2: Dùng API của các cty lớn hay tự host model?
