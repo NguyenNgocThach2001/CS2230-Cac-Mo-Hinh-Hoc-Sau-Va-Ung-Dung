@@ -73,6 +73,7 @@ Nền tảng đại số tuyến tính:
 - Scalar, vector, matrix, tensor.
 	+ Scalar: những giá trị vô hướng, ký hiệu viết thường.
 	+ Vector: biểu diễn dữ liệu có nhiều chiều gồm: vận tốc, lực, điểm, ... ký hiệu viết thường và in đậm.
-	+ 
+	+ Matrix: gồm nhiều vector, ký hiệu viết hoa.
+	+ Tensor: A thuộc Rmxnxp. gồm nhiều hần tử được bố trí vào một không gian nhiều hơn 2 chiều. Ký hiệu viết hoa in đậm.
 - Một số dạng dữ liệu thực tế.
 - 
