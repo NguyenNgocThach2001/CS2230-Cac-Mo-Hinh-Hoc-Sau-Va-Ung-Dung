@@ -99,7 +99,7 @@ Ví dụ chuyển vị của ma trận:
 --------------------------------------------------------------------------
 Nền tảng giải tích:
 - Học lại khái niệm đạo hàm, các công thức đạo hàm cơ bản nhất.
-- Đạo hàm thầy Tiệp thích nhất e^x. Vì không làm gì cả, người ta thường thiết kế các mô hình có chứa các công thức dễ tính đạo hàm. Ví dụ hàm sidmoid(x) = 1 / (1+e^-x)
+- Đạo hàm thầy Tiệp thích nhất là đạo hàm của e^x. Vì không làm gì cả, người ta thường thiết kế các mô hình có chứa các công thức dễ tính đạo hàm. Ví dụ hàm sidmoid(x) = 1 / (1+e^-x)
 
 Công thức cần lưu ý (đạo hàm hàm hợp):
 [f(g(x))]' = f'(g(x)) * g'(x)
