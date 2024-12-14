@@ -1,9 +1,26 @@
 Thầy Tiệp (Sẽ bắt buộc đặt câu hỏi)
 
+Tỉ lệ điểm của môn:
+Bài tập: 3 (Bài tập sẽ nộp lên hệ thống, có chấm điểm tự động, không quá khó).
+Đồ án nhóm: 3 (Sẽ cung cấp danh sách đề tài).
+Thi cuối kỳ: 4 
+  - Thi viết.
+  - Lý thuyết: ví dụ: overfitting là gì, gradient vanishing là gì.
+  - Coding: code trên giấy, đảm bảo làm trong phần bài tập.
+  - Ứng dụng: ví dụ: cho trường hợp thực tế, trình bày cách xây dựng mô hình phù hợp dựa trên trường hợp đó.
+	+ Phân tích bài toán.
+	+ Dữ liệu lấy ở đâu, chuẩn bị thế nào?
+	+ Chọn mô hình gì cho phù hợp?
+	+ Đánh giá kết quả đã train như thế nào?
+
+Sách thầy gợi ý: 
+- Deep learning  (của tác giả vừa nhận giải Vin gì đó).
+
+
 Các dữ liệu hiện tại
-Data set  
-Large - scale dataset (Môn này đầu ra chỉ ở mức độ này)
-Internet scale dataset. (Môn này ở đây thì chỉ finetune, chỉ train các ngạch hẹp).
+  Data set  
+  Large - scale dataset (Môn này đầu ra chỉ ở mức độ này)
+  Internet scale dataset. (Môn này ở đây thì chỉ finetune, chỉ train các ngạch hẹp).
 
 Các nền tảng cần có khi học môn này:
 Toán: 
@@ -24,3 +41,16 @@ Văn bản:
 - RNN
 - Attention
 - Transformer BERT, GPT, TS
+
+----------------------------------------------------------------------
+Các câu hỏi trong lớp học (từ học viên):
+CH1: Làm sao tránh overfitting? Dùng nhiều độ đo khác nhau để đánh giá mô hình. Hoặc Early Stopping. Xử lý dữ liệu (noise)?
+=>
+2 cách đơn giản hay sử dụng:
+1. Tăng thêm kích thước dữ liệu.
+2. Giảm độ phức tạp mô hình.
+CH2: Dùng API của các cty lớn hay tự host model?
+=> thông thường thích dùng API hơn vì đơn giản, ít chi phí, hiệu quả.
+----------------------------------------------------------------------
+
+
