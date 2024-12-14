@@ -111,7 +111,7 @@ Gradient.
 
 delta y/ delta x => đạo hàm xấp xỉ.
 dy/dx => đạo hàm 1 biến
-ay/ax => đạo hàm đa biến theo 1 biến
+∂y/∂x => đạo hàm đa biến theo 1 biến
 (tam giac ngược) nabla x y => đạo hàm theo vector.
 
 --------------------------------------------------------------------------
