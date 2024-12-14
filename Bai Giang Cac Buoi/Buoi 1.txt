@@ -16,12 +16,7 @@ Thi cuối kỳ: 4
 Sách thầy gợi ý: 
 - Deep learning  (của tác giả vừa nhận giải Vin gì đó).
 
-
-Các dữ liệu hiện tại
-  Data set  
-  Large - scale dataset (Môn này đầu ra chỉ ở mức độ này)
-  Internet scale dataset. (Môn này ở đây thì chỉ finetune, chỉ train các ngạch hẹp).
-
+-----------------------------------------------------------------------------------------------------------------------------------
 Các nền tảng cần có khi học môn này:
 Toán: 
 - Đại số tuyến tính, + - * / ma trận. Vì tất cả dữ liệu đều được biểu diễn dưới dạng vector hoặc ma trận (ảnh, text, âm thanh).
@@ -31,7 +26,14 @@ Shallow models cần coi lại:
 - Logistic Reg
 - SoftMax Reg
 ...
+-------------------------------------------------------------------------------------------------------------------------------------
 
+Các quy mô dữ liệu hiện tại:
+  Data set  
+  Large - scale dataset (Môn này đầu ra chỉ ở mức độ này)
+  Internet scale dataset. (Môn này ở đây thì chỉ finetune, chỉ train các ngạch hẹp).
+
+-----------------------------------------------------------------------
 Nội dung chính môn sẽ học: 
 Ảnh: 
 - CNN
@@ -41,6 +43,8 @@ Văn bản:
 - RNN
 - Attention
 - Transformer BERT, GPT, TS
+-----------------------------------------------------------------------
+
 
 ----------------------------------------------------------------------
 Các câu hỏi trong lớp học (từ học viên):
@@ -51,6 +55,24 @@ CH1: Làm sao tránh overfitting? Dùng nhiều độ đo khác nhau để đán
 2. Giảm độ phức tạp mô hình.
 CH2: Dùng API của các cty lớn hay tự host model?
 => thông thường thích dùng API hơn vì đơn giản, ít chi phí, hiệu quả.
+Còn nhiều lắm note không nổi
 ----------------------------------------------------------------------
 
+-----------------------------------------------------------------------
+Nhìn ván đề:
+- Problem -> why -> solution. 
+- cần di chuyển từ A -> B mua nước suối, chọn đi bộ, mỏi chân -> dùng sức của mình nhiều -> đi xe ngựa.
+- đi xe ngựa từ A -> B, ngựa mỏi chân -> dùng sức ngựa nhiều -> đi xe máy.
+- đi xe máy từ A -> B sang tỉnh khác, không an toàn -> vì mưa, bụi, nắng, ... -> đi ô tô.
+- đi ô tô từ A -> B sang nước, không di chuyển được qua địa hình phức tạp như núi, sông, biển, ... -> Vì xe phải bám vào mặt đường chạy được -> đi máy bay.
 
+------------------------------------------------------------------------
+
+
+Nền tảng đại số tuyến tính:
+- Scalar, vector, matrix, tensor.
+	+ Scalar: những giá trị vô hướng, ký hiệu viết thường.
+	+ Vector: biểu diễn dữ liệu có nhiều chiều gồm: vận tốc, lực, điểm, ... ký hiệu viết thường và in đậm.
+	+ 
+- Một số dạng dữ liệu thực tế.
+- 
