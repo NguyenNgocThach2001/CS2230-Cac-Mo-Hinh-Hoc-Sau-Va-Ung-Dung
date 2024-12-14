@@ -1,4 +1,4 @@
-Thầy Tiệp (Sẽ bắt buộc đặt câu hỏi)
+Thầy Tiệp (Sẽ bắt buộc đặt câu hỏi). Được note theo thời gian từ đầu tới cuối buổi học.
 
 Tỉ lệ điểm của môn:
 Bài tập: 3 (Bài tập sẽ nộp lên hệ thống, có chấm điểm tự động, không quá khó).
@@ -15,6 +15,8 @@ Thi cuối kỳ: 4
 
 Sách thầy gợi ý: 
 - Deep learning  (của tác giả vừa nhận giải Vin gì đó).
+
+Môn học dùng python.
 
 -----------------------------------------------------------------------------------------------------------------------------------
 Các nền tảng cần có khi học môn này:
@@ -77,16 +79,53 @@ Nền tảng đại số tuyến tính:
 	+ Tensor: A thuộc Rmxnxp. gồm nhiều hần tử được bố trí vào một không gian nhiều hơn 2 chiều. Ký hiệu viết hoa in đậm.
 - Tổng 2 vector.
 - Nhân 2 vector.
+- Tích hađâm.
 - Tích vô hướng 2 vector.
-Ví dụ minh họa nhân 2 vector	:
+Ví dụ minh họa nhân 2 vector:
 - Cho 2 vector x^T và y. (x^T ngang, y dọc).
 - Vector x biểu hiện số tín chỉ của các môn học.
 - Vector y biểu hiện kết quả thi của môn học.
-- Vector kết quả là tín chỉ * điểm thi
-x^T.y = [3 3 4 2 1] . |9| = 
+- Vector kết quả là tổng số tín chỉ * điểm thi
+x^T.y = [3 3 4 2 1] . |9| = [ a ] 
 		      |6|
 		      |5|
 		      |8|
 		      |1|
-- Một số dạng dữ liệu thực tế.
-- 
+Ví dụ chuyển vị của ma trận:
+|1 2|^T
+|4 5|  = | 1 4 6 |
+|6 7|	 | 2 5 7 |
+
+--------------------------------------------------------------------------
+Nền tảng giải tích:
+- Học lại khái niệm đạo hàm, các công thức đạo hàm cơ bản nhất.
+- Đạo hàm thầy Tiệp thích nhất e^x. Vì không làm gì cả, người ta thường thiết kế các mô hình có chứa các công thức dễ tính đạo hàm. Ví dụ hàm sidmoid(x) = 1 / (1+e^-x)
+
+Công thức cần lưu ý (đạo hàm hàm hợp):
+[f(g(x))]' = f'(g(x)) * g'(x)
+[f1(f2(f3(...fn(x)]' = (df1/df2) * (df2/df3) * ... * (dfn-1/dfn) * (dfn/x). (Chain rule)
+Cái này có thể gây ra vanishing gradient vì các cụm df/df cho giá trị rất nhỏ và kết quả = 0. 
+
+Đạo hàm riêng (partial dẻivatives) của hàm nhiều biến theo biến x.
+Gradient. 
+
+delta y/ delta x => đạo hàm xấp xỉ.
+dy/dx => đạo hàm 1 biến
+ay/ax => đạo hàm đa biến theo 1 biến
+(tam giac ngược) nabla x y => đạo hàm theo vector.
+
+--------------------------------------------------------------------------
+
+Tất cả các mô hình máy học:
+x 
+f theta(x) model
+y~ kết quả dự đoán
+y  kết quả thực tế
+Loss(theta): hàm để y~ cho ra kết quả gần y nhất.
+ ________________________
+|x -> ftheta(x) -> y~ ≈ y|
+
+Công việc của 1 nhà khoa học deep learning:
+- Thiết kế ftheota(x)
+- Thiết kế hàm Loss(theta)
+- Tìm theta* để Loss(theta) nhỏ nhất.
