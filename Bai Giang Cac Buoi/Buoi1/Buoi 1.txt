@@ -163,8 +163,15 @@ Vậy gradient là gì? Là vector chứa tất cả các đạo hàm riêng c�
 Tức gradient là vector [4x,2y]. Có thể thêm các biến z k i l, gradient có thể là vector [4x,2y,3z,5ln(k),1.5i,-5l^2]
 
 ---------------------------------------------------------------------------
-Khi bạn biết độ dốc của hàm số đang âm hay dương, bạn có tìm được hướng đi để đi đến điểm có giá trị thấp nhất không?
+1. Khi bạn biết độ dốc của hàm số đang âm hay dương, bạn có tìm được hướng đi để đi đến điểm có giá trị thấp nhất không?
 Mình có 1 nhận xét thế này:
 - Nếu tại điểm x có độ dốc âm, tức đang đi xuống => tôi cứ đi xuống, tức tăng x.
 - Nếu tại điểm x có độ dốc dương, tức đang đi lên => tôi đi ngược lại, tức giảm x.
 Tăng và giảm x với giá trị bao nhiêu? Cái này mình không chứng minh được, cách đơn giản nhất mà mọi người hay dùng là đi 1 khoảng learning rate * gradient.
+
+2. Vậy với hàm nhiều biến, đi thế nào?
+- Ví dụ có hàm f(x,y,z). Giả sử tính được gradient là vector [2x, -5y, 10z^2].  
+di chuyển x: 1 khoảng learning rate * độ dốc x (2x)
+di chuyển y: 1 khoảng learning rate * độ dốc y (-5y)
+di chuyển z: 1 khoảng learning rate * độ dốc z (10z^2)
+=> nói ngắn gọi là cứ đi ngược gradient. 
