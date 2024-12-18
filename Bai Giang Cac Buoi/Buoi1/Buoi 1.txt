@@ -165,8 +165,8 @@ Tức gradient là vector [4x,2y]. Có thể thêm các biến z k i l, gradient
 ---------------------------------------------------------------------------
 1. Khi bạn biết độ dốc của hàm số đang âm hay dương, bạn có tìm được hướng đi để đi đến điểm có giá trị thấp nhất không?
 Mình có 1 nhận xét thế này:
-- Nếu tại điểm x có độ dốc âm, tức đang đi xuống => tôi cứ đi xuống, tức tăng x.
-- Nếu tại điểm x có độ dốc dương, tức đang đi lên => tôi đi ngược lại, tức giảm x.
+- Nếu tại điểm x có độ dốc âm, tức y đang đi xuống => tôi cứ tăng x để y đi xuống.
+- Nếu tại điểm x có độ dốc dương, tức y đang đi lên => tôi phải giảm x để y đi xuống.
 Tăng và giảm x với giá trị bao nhiêu? Cái này mình không chứng minh được, cách đơn giản nhất mà mọi người hay dùng là đi 1 khoảng learning rate * gradient.
 
 2. Vậy với hàm nhiều biến, đi thế nào?
@@ -175,3 +175,4 @@ di chuyển x: 1 khoảng learning rate * độ dốc x (2x)
 di chuyển y: 1 khoảng learning rate * độ dốc y (-5y)
 di chuyển z: 1 khoảng learning rate * độ dốc z (10z^2)
 => nói ngắn gọi là cứ đi ngược gradient. 
+Cách ở trên gọi là gradient descent. descent là cứ đi làm sao cho nó giảm đấy.
