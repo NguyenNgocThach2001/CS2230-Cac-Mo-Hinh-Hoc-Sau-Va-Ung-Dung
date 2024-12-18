@@ -133,6 +133,7 @@ Công việc của 1 nhà khoa học deep learning:
 
 ---------------------------------------------------------------------------
 Gradient là gì?
+1. Quan sát hàm số 1 biến:
 Ở cấp 3, mình hay dùng đạo hàm để quan sát sự thay đổi của hàm số đúng không?
 - Ví dụ: 
 hàm y = f(x) = 2x^2
@@ -146,9 +147,9 @@ cứ nghĩ tới ô tô đang lên dốc, bạn chọn 2 điểm là điểm đ�
 delta x = x1-x2 và delta y = y1-y2
 rồi lấy delta y/ delta x. Ngẫm thử xem phép tính trên có biểu thị độ dốc không? :D
 Vậy thế nào là độ dốc tại 1 điểm? Khi 2 điểm RẤT gần nhau, độ dốc giữa 2 điểm đó có thể xem là độ dốc tại 1 điểm.
+
+2. Quan sát hàm số nhiều biến:
 Ở trên chỉ đề cập hàm số phụ thuộc vào 1 biến x. Vậy hàm số phụ thuộc vào 2 biến x,y thì sao? Tính độ dốc kiểu gì?
-
-
 - Ví dụ:
 hàm z = f(x,y) = 2x^2 + y^2
 Bây giờ có 2 biến thì đạo hàm sao? Quan sát kiểu gì? Độ dốc tại 2 điểm tính sao?
