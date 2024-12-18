@@ -131,3 +131,32 @@ Công việc của 1 nhà khoa học deep learning:
 - Thiết kế hàm Loss(theta)
 - Tìm theta* để Loss(theta) nhỏ nhất.
 
+---------------------------------------------------------------------------
+Gradient là gì?
+Ở cấp 3, mình hay dùng đạo hàm để quan sát sự thay đổi của hàm số đúng không?
+Ví dụ: 
+hàm y = f(x) = 2x^2
+đạo hàm của hàm f(x) là hàm f'(x) = 4x .(hàm này có ý nghĩa gì?)
+Giả sử cần quan sát hàm f(x) tại điểm x = 2. 
+Thế 2 vào hàm f'(x) ta có f'(2) = 8. Con số 8 này biểu thị độ dốc của hàm f(x) tại điểm x = 2.
+Độ dốc này dương, tức là tại điểm x = 2, đồ thị đi lên với tốc độ 8. (chỉ xét trên 1 khoảng tăng rất nhỏ) 
+Ngược lại trục y đang giảm nếu ra con số -8.
+Tại sao đạo hàm cho biết đồ thị đang tăng hay giảm? Nói về độ dốc, người ta thường tính độ dốc giữa 2 điểm,
+cứ nghĩ tới ô tô đang lên dốc, bạn chọn 2 điểm là điểm đầu dốc (x1;y1) và điểm cuối dốc (x2;y2). Bạn tính
+delta x = x1-x2 và delta y = y1-y2
+rồi lấy delta y/ delta x. Ngẫm thử xem phép tính trên có biểu thị độ dốc không? :D
+Vậy thế nào là độ dốc tại 1 điểm? Khi 2 điểm RẤT gần nhau, độ dốc giữa 2 điểm đó có thể xem là độ dốc tại 1 điểm.
+
+Ở trên chỉ đề cập hàm số phụ thuộc vào 1 biến x. Vậy hàm số phụ thuộc vào 2 biến x,y thì sao? Tính độ dốc kiểu gì?
+Ví dụ:
+hàm z = f(x,y) = 2x^2 + y^2
+Bây giờ có 2 biến thì đạo hàm sao? Quan sát kiểu gì? Độ dốc tại 2 điểm tính sao?
+Giải pháp là đạo hàm theo từng biến, cứ mặc kệ các biến khác, quan sát sự thay đổi của 1 biến 1 lúc thôi.
+Đạo hàm của f(x,y) theo x là 4x.
+Đạo hàm của f(x,y) theo y là 2y.
+Giả sử cần quan sát hàm f(x,y) tại điểm x=2,y=-5.
+x = 2 => 4*x = 4*2 = 8. Vậy với x=2, dương, tại điểm x=2 khi x tăng thì z sẽ tăng (chỉ xét trên 1 khoảng tăng rất nhỏ) [quan sát 1]
+y = -5 => 2*y = 2*-5 = -10. Vậy với y=-5, âm, tại điểm y=-5 khi y tăng thì z sẽ giảm (chỉ xét trên 1 khoảng giảm rất nhỏ) [quan sát 2]
+dựa trên [quan sát 1] và [quan sát 2], có phải bạn đã biết tại điểm x=2 và y=-5 thì đồ thị có xu hướng thay đổi thế nào rồi đúng không?
+Vậy gradient là gì? Là vector chứa tất cả các đạo hàm riêng của hàm f(x,y).
+Tức gradient là vector [4x,2y]
