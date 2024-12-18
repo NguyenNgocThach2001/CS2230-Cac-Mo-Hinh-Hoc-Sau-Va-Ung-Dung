@@ -138,15 +138,15 @@ Gradient là gì?
 - Ví dụ: 
 hàm y = f(x) = 2x^2
 đạo hàm của hàm f(x) là hàm f'(x) = 4x .(hàm này có ý nghĩa gì?)
-Giả sử cần quan sát hàm f(x) tại điểm x = 2. 
-Thế 2 vào hàm f'(x) ta có f'(2) = 8. Con số 8 này biểu thị độ dốc của hàm f(x) tại điểm x = 2.
-Độ dốc này dương, tức là tại điểm x = 2, đồ thị đi lên với tốc độ 8. (chỉ xét trên 1 khoảng tăng rất nhỏ) 
+Giả sử cần QUAN SÁT hàm f(x) tại điểm x = 2. 
+Thế 2 vào hàm f'(x) ta có f'(2) = 8. Con số 8 này biểu thị ĐỘ DỐC của hàm f(x) tại điểm x = 2.
+Độ dốc này dương, tức là tại điểm x = 2, trục y đang đi lên với tốc độ 8. (chỉ xét trên 1 khoảng tăng rất nhỏ) 
 Ngược lại trục y đang giảm nếu ra con số -8.
-Tại sao đạo hàm cho biết đồ thị đang tăng hay giảm? Nói về độ dốc, người ta thường tính độ dốc giữa 2 điểm,
+Tại sao đạo hàm, độ dốc cho biết đồ thị đang tăng hay giảm? Nói về độ dốc, người ta thường tính độ dốc giữa 2 điểm,
 cứ nghĩ tới ô tô đang lên dốc, bạn chọn 2 điểm là điểm đầu dốc (x1;y1) và điểm cuối dốc (x2;y2). Bạn tính
-delta x = x1-x2 và delta y = y1-y2
-rồi lấy delta y/ delta x. Ngẫm thử xem phép tính trên có biểu thị độ dốc không? :D
-Vậy thế nào là độ dốc tại 1 điểm? Khi 2 điểm RẤT gần nhau, độ dốc giữa 2 điểm đó có thể xem là độ dốc tại 1 điểm.
+delta x = x2-x1 và delta y = y2-y1
+rồi tính slope = delta y/delta x. Ngẫm thử xem phép tính trên có biểu thị được độ dốc không? :D
+Vậy thế nào là độ dốc tại 1 điểm? Khi 2 điểm RẤT GẦN NHAU, độ dốc giữa 2 điểm đó có thể xem là độ dốc tại 1 điểm.
 
 2. Quan sát hàm số nhiều biến:
 Ở trên chỉ đề cập hàm số phụ thuộc vào 1 biến x. Vậy hàm số phụ thuộc vào 2 biến x,y thì sao? Tính độ dốc kiểu gì?
@@ -168,12 +168,15 @@ Tức gradient là vector [4x,2y]. Có thể thêm các biến z k i l, gradient
 Mình có 1 nhận xét thế này:
 - Nếu tại điểm x có độ dốc âm, tức y đang đi xuống => tôi cứ tăng x để y đi xuống.
 - Nếu tại điểm x có độ dốc dương, tức y đang đi lên => tôi phải giảm x để y đi xuống.
-Tăng và giảm x với giá trị bao nhiêu? Cái này mình không chứng minh được, cách đơn giản nhất mà mọi người hay dùng là đi 1 khoảng learning rate * gradient.
+Tăng và giảm x với giá trị bao nhiêu? Cái này mình không chứng minh được, cách đơn giản nhất mà mọi người hay dùng là đi 1 khoảng - learning rate * gradient. Tức x mới = x - learning rate * gradietn.
 
 2. Vậy với hàm nhiều biến, đi thế nào?
 - Ví dụ có hàm f(x,y,z). Giả sử tính được gradient là vector [2x, -5y, 10z^2].  
-di chuyển x: 1 khoảng learning rate * độ dốc x (2x)
-di chuyển y: 1 khoảng learning rate * độ dốc y (-5y)
-di chuyển z: 1 khoảng learning rate * độ dốc z (10z^2)
+di chuyển x: 
+	x = x - learning rate * độ dốc x (2x)
+di chuyển y:
+	y = y - learning rate * độ dốc y (-5y)
+di chuyển z: 
+	z = z - learning rate * độ dốc z (10z^2)
 => nói ngắn gọi là cứ đi ngược gradient. 
 Cách ở trên gọi là gradient descent. descent là cứ đi làm sao cho nó giảm đấy.
