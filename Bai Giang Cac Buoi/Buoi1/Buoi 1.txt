@@ -134,7 +134,7 @@ Công việc của 1 nhà khoa học deep learning:
 ---------------------------------------------------------------------------
 Gradient là gì?
 Ở cấp 3, mình hay dùng đạo hàm để quan sát sự thay đổi của hàm số đúng không?
-Ví dụ: 
+- Ví dụ: 
 hàm y = f(x) = 2x^2
 đạo hàm của hàm f(x) là hàm f'(x) = 4x .(hàm này có ý nghĩa gì?)
 Giả sử cần quan sát hàm f(x) tại điểm x = 2. 
@@ -146,9 +146,10 @@ cứ nghĩ tới ô tô đang lên dốc, bạn chọn 2 điểm là điểm đ�
 delta x = x1-x2 và delta y = y1-y2
 rồi lấy delta y/ delta x. Ngẫm thử xem phép tính trên có biểu thị độ dốc không? :D
 Vậy thế nào là độ dốc tại 1 điểm? Khi 2 điểm RẤT gần nhau, độ dốc giữa 2 điểm đó có thể xem là độ dốc tại 1 điểm.
-
 Ở trên chỉ đề cập hàm số phụ thuộc vào 1 biến x. Vậy hàm số phụ thuộc vào 2 biến x,y thì sao? Tính độ dốc kiểu gì?
-Ví dụ:
+
+
+- Ví dụ:
 hàm z = f(x,y) = 2x^2 + y^2
 Bây giờ có 2 biến thì đạo hàm sao? Quan sát kiểu gì? Độ dốc tại 2 điểm tính sao?
 Giải pháp là đạo hàm theo từng biến, cứ mặc kệ các biến khác, quan sát sự thay đổi của 1 biến 1 lúc thôi.
@@ -159,4 +160,11 @@ x = 2 => 4*x = 4*2 = 8. Vậy với x=2, dương, tại điểm x=2 khi x tăng 
 y = -5 => 2*y = 2*-5 = -10. Vậy với y=-5, âm, tại điểm y=-5 khi y tăng thì z sẽ giảm (chỉ xét trên 1 khoảng giảm rất nhỏ) [quan sát 2]
 dựa trên [quan sát 1] và [quan sát 2], có phải bạn đã biết tại điểm x=2 và y=-5 thì đồ thị có xu hướng thay đổi thế nào rồi đúng không?
 Vậy gradient là gì? Là vector chứa tất cả các đạo hàm riêng của hàm f(x,y).
-Tức gradient là vector [4x,2y]
+Tức gradient là vector [4x,2y]. Có thể thêm các biến z k i l, gradient có thể là vector [4x,2y,3z,5ln(k),1.5i,-5l^2]
+
+---------------------------------------------------------------------------
+Khi bạn biết độ dốc của hàm số đang âm hay dương, bạn có tìm được hướng đi để đi đến điểm có giá trị thấp nhất không?
+Mình có 1 nhận xét thế này:
+- Nếu tại điểm x có độ dốc âm, tức đang đi xuống => tôi cứ đi xuống, tức tăng x.
+- Nếu tại điểm x có độ dốc dương, tức đang đi lên => tôi đi ngược lại, tức giảm x.
+Tăng và giảm x với giá trị bao nhiêu? Cái này mình không chứng minh được, cách đơn giản nhất mà mọi người hay dùng là đi 1 khoảng learning rate * gradient.
