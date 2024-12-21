@@ -1,0 +1,16 @@
+Ký hiệu:
+L(theta; x,y) 
+theta là biến
+x,y là tham số.
+
+1. Giới thiệu gradient descent.
+
+2. Linear regression:
+Vẽ 1 đường thẳng fit nhất đi qua tất cả điểm dữ liệu
+f(theta; x) = x*theta1 + theta0
+Thiết kế hàm loss:
+- Tính khoảng cách của tất cả các điểm đến đường thẳng.
+    L(theta; x) = sum(1->n) (y^i - yi)**2 
+- 
+
+(o1x1 + o0 - yi)^2
