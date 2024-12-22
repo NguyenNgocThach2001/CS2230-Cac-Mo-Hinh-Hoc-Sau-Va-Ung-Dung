@@ -13,4 +13,4 @@ Thiết kế hàm loss:
     L(theta; x) = sum(1->n) (y^i - yi)**2 
 - 
 
-(o1x1 + o0 - yi)^2
+(o1x1 + o0 - yi)^2 
