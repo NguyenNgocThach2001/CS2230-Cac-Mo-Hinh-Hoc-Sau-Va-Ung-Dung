@@ -37,11 +37,14 @@ plt.ylabel('y')
 plt.legend()
 
 line, = plt.plot(x_line, x_line * theta[1, 0] + theta[0, 0], color='green', label='Dự đoán')
-
+v = [0, 0]
+dampening = 0.7
 while True:
     dt0, dt1 = compute_gradients(X, Y, theta)
-    theta[0] -= alpha * dt0
-    theta[1] -= alpha * dt1
+    v[0] = v[0] * 0.99 + dt0 * (1-dampening)
+    v[1] = v[1] * 0.99 + dt1 * (1-dampening)
+    theta[0] = theta[0] - v[0] * alpha
+    theta[1] = theta[1] - v[1] * alpha
     line.set_ydata(x_line * theta[1, 0] + theta[0, 0])
     plt.pause(0.016)  
     if abs(dt0) < eps and abs(dt1) < eps:
