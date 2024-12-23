@@ -6,7 +6,7 @@ def f(x):
     return 2 * x + 2
 
 x_data = np.random.uniform(-5, 5, 20)
-noise = np.random.normal(0, 1.5, 20)
+noise = np.random.normal(0, 1, 20)
 y_data_noise = f(x_data) + noise
 x_line = np.linspace(-5, 5, 200)
 
@@ -22,14 +22,16 @@ def compute_gradients(X, Y, theta):
     grad1 = np.sum(X[:, 0] * errors) / m
     return grad0, grad1
 
-alpha = 0.001
-eps = 0.001
+alpha = 0.00005
+eps = 0.000001
 
 plt.figure(figsize=(8, 6))
 plt.scatter(x_data, y_data_noise, color='red', label='Dữ liệu nhiễu') 
 plt.plot(x_line, f(x_line), label='Đường ban đầu (y=2x+2)', color='red')  
 plt.axhline(0, color='black', linewidth=0.5)
 plt.axvline(0, color='black', linewidth=0.5)
+plt.xlim(-15,15)
+plt.ylim(-15,15)
 plt.grid(True)
 plt.title('Cập nhật đường thẳng dự đoán qua từng bước')
 plt.xlabel('x')
